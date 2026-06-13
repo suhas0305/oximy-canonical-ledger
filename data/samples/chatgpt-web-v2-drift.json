@@ -1,0 +1,28 @@
+{
+  "vendor": "chatgpt",
+  "surface": "web",
+  "schemaVersion": "2026-03",
+  "thread": {
+    "uuid": "chatcmpl-team-a-002",
+    "account": {
+      "primaryEmail": "maya@acme.com"
+    },
+    "modelName": "gpt-5-mini",
+    "turns": [
+      {
+        "speaker": "user",
+        "text": "Summarize our vendor risk notes.",
+        "time": "2026-06-11T14:20:00.000Z"
+      },
+      {
+        "speaker": "assistant",
+        "text": "The main risks are...",
+        "time": "2026-06-11T14:20:03.000Z"
+      }
+    ],
+    "metering": {
+      "tokensIn": 32,
+      "tokensOut": 121
+    }
+  }
+}

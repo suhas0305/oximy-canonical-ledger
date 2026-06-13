@@ -1,0 +1,21 @@
+{
+  "vendor": "agent_runner",
+  "surface": "workflow",
+  "run": {
+    "id": "agent-155",
+    "started_at": "2026-06-12T16:48:00.000Z",
+    "model": "agent-large",
+    "goal": "Open a ticket for expired AI vendor reviews."
+  },
+  "initiator": {
+    "email": "priya@acme.com"
+  },
+  "usage": {
+    "input_tokens": 410,
+    "output_tokens": 522,
+    "tool_calls": 3
+  },
+  "billing": {
+    "usd": 0.028
+  }
+}

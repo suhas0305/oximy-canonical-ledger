@@ -1,0 +1,21 @@
+{
+  "vendor": "creative_studio",
+  "surface": "web",
+  "job": {
+    "id": "img-3001",
+    "model": "image-pro-3",
+    "created_at": "2026-06-12T16:10:00.000Z",
+    "prompt": "Generate a clean compliance dashboard hero image.",
+    "outputs": 2
+  },
+  "user": {
+    "email": "omar@acme.com"
+  },
+  "usage": {
+    "prompt_tokens": 28,
+    "image_units": 2
+  },
+  "billing": {
+    "usd": 0.08
+  }
+}

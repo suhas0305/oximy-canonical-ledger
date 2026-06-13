@@ -1,0 +1,29 @@
+{
+  "vendor": "chatgpt",
+  "surface": "web",
+  "schemaVersion": "2026-01",
+  "conversation": {
+    "id": "chatcmpl-team-a-001",
+    "user": {
+      "email": "maya@acme.com"
+    },
+    "model": "gpt-5-mini",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Draft a policy for approved AI tools.",
+        "createdAt": "2026-06-10T09:12:00.000Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Here is a concise policy draft...",
+        "createdAt": "2026-06-10T09:12:04.000Z"
+      }
+    ],
+    "usage": {
+      "inputTokens": 41,
+      "outputTokens": 183,
+      "costUsd": 0.0048
+    }
+  }
+}

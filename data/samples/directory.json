@@ -1,0 +1,42 @@
+{
+  "people": [
+    {
+      "personId": "person_1001",
+      "email": "maya@acme.com",
+      "costCenter": "Security",
+      "displayName": "Maya Singh"
+    },
+    {
+      "personId": "person_1002",
+      "email": "priya@acme.com",
+      "costCenter": "Legal",
+      "displayName": "Priya Rao"
+    },
+    {
+      "personId": "person_1003",
+      "email": "omar@acme.com",
+      "costCenter": "Marketing",
+      "displayName": "Omar Chen"
+    },
+    {
+      "personId": "person_1004",
+      "email": "lena@acme.com",
+      "costCenter": "Platform",
+      "displayName": "Lena Ortiz"
+    }
+  ],
+  "authoritativeEdges": [
+    {
+      "type": "handle_to_person",
+      "handle": "maya-acme",
+      "personId": "person_1001",
+      "proof": "sso_linked_account"
+    },
+    {
+      "type": "handle_to_person",
+      "handle": "priya-legal",
+      "personId": "person_1002",
+      "proof": "sso_linked_account"
+    }
+  ]
+}

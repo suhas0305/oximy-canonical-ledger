@@ -1,0 +1,23 @@
+{
+  "vendor": "doc_intel",
+  "surface": "web",
+  "document": {
+    "id": "doc-477",
+    "name": "AI Vendor DPA.pdf",
+    "pages": 18
+  },
+  "user": {
+    "email": "priya@acme.com"
+  },
+  "analysis": {
+    "created_at": "2026-06-12T17:02:00.000Z",
+    "model": "doc-reviewer-2"
+  },
+  "usage": {
+    "input_tokens": 6100,
+    "output_tokens": 730
+  },
+  "billing": {
+    "usd": 0.019
+  }
+}

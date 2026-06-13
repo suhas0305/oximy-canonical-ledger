@@ -1,0 +1,23 @@
+{
+  "vendor": "enterprise_search",
+  "surface": "web",
+  "query": {
+    "id": "search-991",
+    "time": "2026-06-12T16:34:00.000Z",
+    "text": "Which approved AI tools can process customer data?"
+  },
+  "principal": {
+    "email": "omar@acme.com"
+  },
+  "answer": {
+    "model": "rag-answerer-v2"
+  },
+  "usage": {
+    "input_tokens": 21,
+    "output_tokens": 144,
+    "documents_retrieved": 7
+  },
+  "billing": {
+    "usd": 0.0024
+  }
+}

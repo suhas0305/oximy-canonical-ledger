@@ -1,0 +1,23 @@
+{
+  "vendor": "meeting_ai",
+  "surface": "desktop",
+  "recording": {
+    "id": "meet-882",
+    "started_at": "2026-06-12T17:30:00.000Z",
+    "duration_seconds": 1840,
+    "title": "AI approval review"
+  },
+  "host": {
+    "email": "lena@acme.com"
+  },
+  "transcript": {
+    "model": "speech-enterprise"
+  },
+  "usage": {
+    "output_tokens": 2900,
+    "segments": 126
+  },
+  "billing": {
+    "usd": 0.052
+  }
+}

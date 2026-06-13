@@ -1,0 +1,12 @@
+{
+  "vendor": "chatgpt",
+  "surface": "billing",
+  "period": "2026-06",
+  "allocations": [
+    {
+      "conversationId": "chatcmpl-team-a-002",
+      "costUsd": 0.0037,
+      "source": "invoice_export"
+    }
+  ]
+}
