@@ -1,0 +1,37 @@
+{
+  "source": "meeting-ai:desktop",
+  "match": {
+    "vendor": "meeting_ai",
+    "surface": "desktop"
+  },
+  "parser_version": "config:meeting-ai@1",
+  "stable_id": {
+    "fields": ["vendor", "recording.id"]
+  },
+  "actor_ref": {
+    "kind": "email",
+    "path": "host.email"
+  },
+  "tool_ref": {
+    "vendor": "meeting_ai",
+    "surface": "desktop",
+    "model_path": "transcript.model"
+  },
+  "occurred_at": "recording.started_at",
+  "activity_type": "transcription",
+  "usage_measures": {
+    "audio_seconds": "recording.duration_seconds",
+    "output_tokens": "usage.output_tokens",
+    "messages": "usage.segments"
+  },
+  "content_refs": [
+    {
+      "role": "meeting",
+      "path": "recording.title"
+    }
+  ],
+  "cost": {
+    "path": "billing.usd",
+    "authority": "source_payload"
+  }
+}

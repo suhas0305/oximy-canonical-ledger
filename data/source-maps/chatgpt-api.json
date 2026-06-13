@@ -1,0 +1,37 @@
+{
+  "source": "chatgpt:api",
+  "match": {
+    "vendor": "chatgpt",
+    "surface": "api"
+  },
+  "parser_version": "config:chatgpt-api@1",
+  "stable_id": {
+    "fields": ["vendor", "request.id"]
+  },
+  "actor_ref": {
+    "kind": "email",
+    "path": "organization.user_email"
+  },
+  "tool_ref": {
+    "vendor": "chatgpt",
+    "surface": "api",
+    "model_path": "request.model"
+  },
+  "occurred_at": "request.created_at",
+  "activity_type": "completion",
+  "usage_measures": {
+    "input_tokens": "usage.prompt_tokens",
+    "output_tokens": "usage.completion_tokens",
+    "messages": "usage.requests"
+  },
+  "content_refs": [
+    {
+      "role": "prompt",
+      "path": "request.prompt_preview"
+    }
+  ],
+  "cost": {
+    "path": "billing.allocated_usd",
+    "authority": "source_payload"
+  }
+}

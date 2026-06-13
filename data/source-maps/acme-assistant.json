@@ -1,0 +1,37 @@
+{
+  "source": "acme-assistant:web",
+  "match": {
+    "vendor": "acme_assistant",
+    "surface": "web"
+  },
+  "parser_version": "config:acme-assistant@1",
+  "stable_id": {
+    "fields": ["vendor", "session.id"]
+  },
+  "actor_ref": {
+    "kind": "email",
+    "path": "user.mail"
+  },
+  "tool_ref": {
+    "vendor": "acme_assistant",
+    "surface": "web",
+    "model_path": "engine.model"
+  },
+  "occurred_at": "session.started_at",
+  "activity_type": "conversation",
+  "usage_measures": {
+    "input_tokens": "meter.in",
+    "output_tokens": "meter.out",
+    "messages": "session.turn_count"
+  },
+  "content_refs": [
+    {
+      "role": "prompt",
+      "path": "session.first_prompt"
+    }
+  ],
+  "cost": {
+    "path": "meter.usd",
+    "authority": "source_payload"
+  }
+}
