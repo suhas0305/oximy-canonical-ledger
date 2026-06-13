@@ -1,0 +1,37 @@
+{
+  "source": "vector-db:api",
+  "match": {
+    "vendor": "vector_db",
+    "surface": "api"
+  },
+  "parser_version": "config:vector-db@1",
+  "stable_id": {
+    "fields": ["vendor", "batch.id"]
+  },
+  "actor_ref": {
+    "kind": "email",
+    "path": "owner.email"
+  },
+  "tool_ref": {
+    "vendor": "vector_db",
+    "surface": "api",
+    "model_path": "model"
+  },
+  "occurred_at": "batch.created_at",
+  "activity_type": "embedding",
+  "usage_measures": {
+    "input_tokens": "usage.tokens",
+    "vectors": "usage.vectors",
+    "messages": "usage.documents"
+  },
+  "content_refs": [
+    {
+      "role": "corpus",
+      "path": "batch.description"
+    }
+  ],
+  "cost": {
+    "path": "billing.usd",
+    "authority": "source_payload"
+  }
+}
