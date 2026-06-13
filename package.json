@@ -1,0 +1,18 @@
+{
+  "name": "oximy-canonical-ledger",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local prototype for canonical AI usage events, claim revisions, parser drift detection, and metric consistency.",
+  "scripts": {
+    "seed": "node src/cli.js seed",
+    "replay": "node src/cli.js replay",
+    "drift": "node src/cli.js drift",
+    "check": "node src/cli.js check",
+    "serve": "node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
