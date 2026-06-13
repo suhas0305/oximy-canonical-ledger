@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oximy Canonical Ledger</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>Canonical AI Usage Ledger</h1>
+        <p>Evidence-backed claims, late revisions, drift detection, and one metrics implementation.</p>
+      </div>
+      <div class="actions">
+        <button id="seedBtn">Seed</button>
+        <button id="checkBtn">Check</button>
+        <button id="driftBtn">Drift</button>
+        <button id="replayBtn">Reality Diff</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="verdict" id="verdict">
+        <div>
+          <span class="eyebrow">Canonical Event Readiness</span>
+          <strong>Checking requirements...</strong>
+        </div>
+      </section>
+      <section class="metrics" id="metrics"></section>
+      <div class="status" id="status">Loading dashboard...</div>
+      <section>
+        <div class="sectionHead">
+          <h2>Requirement Coverage</h2>
+          <span id="coverageCount">0/5 satisfied</span>
+        </div>
+        <div class="coverage" id="coverage"></div>
+      </section>
+      <section>
+        <div class="sectionHead">
+          <h2>Canonical Activity Types</h2>
+          <span id="typeCount">0/9 covered</span>
+        </div>
+        <div class="typeGrid" id="typeGrid"></div>
+      </section>
+      <section>
+        <div class="sectionHead">
+          <h2>Cost Centers</h2>
+          <span id="costCenterCount">0 teams</span>
+        </div>
+        <div class="teamGrid" id="teamGrid"></div>
+      </section>
+      <section class="gates" id="gates"></section>
+      <section class="split">
+        <div>
+          <h2>Canonical Activities</h2>
+          <div class="tablewrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>When</th>
+                  <th>Type</th>
+                  <th>Tool</th>
+                  <th>Actor</th>
+                  <th>Person</th>
+                  <th>Cost</th>
+                  <th>State</th>
+                </tr>
+              </thead>
+              <tbody id="activityRows"></tbody>
+            </table>
+          </div>
+        </div>
+        <aside>
+          <h2>Reality Diff</h2>
+          <pre id="diffBox">Run Reality Diff to compare metrics before and after replay.</pre>
+          <h2>Structural Drift</h2>
+          <pre id="driftBox">Run Drift to compare known ChatGPT payload generations.</pre>
+        </aside>
+      </section>
+    </main>
+    <script type="module" src="/app.js?v=6"></script>
+  </body>
+</html>
