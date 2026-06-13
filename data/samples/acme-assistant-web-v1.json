@@ -1,0 +1,21 @@
+{
+  "vendor": "acme_assistant",
+  "surface": "web",
+  "session": {
+    "id": "acme-ai-9001",
+    "started_at": "2026-06-12T10:30:00.000Z",
+    "turn_count": 2,
+    "first_prompt": "Create a vendor comparison table."
+  },
+  "user": {
+    "mail": "maya@acme.com"
+  },
+  "engine": {
+    "model": "llama-4-enterprise"
+  },
+  "meter": {
+    "in": 58,
+    "out": 240,
+    "usd": 0.0019
+  }
+}
